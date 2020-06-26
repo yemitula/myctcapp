@@ -1,1 +1,12 @@
-<p>list works!</p>
+<h1>Books</h1>
+
+<ul>
+    <li *ngFor="let book of books">
+        <p class="title">{{book.title}}</p>
+        <p class="author">{{book.author}}</p>
+        <p class="date">{{book.releaseDate}}</p>
+        <a class="link" href="{{book.image}}" target="_blank">
+            <img src="{{book.image}}" alt="Book Image">
+        </a>
+    </li>
+</ul>
